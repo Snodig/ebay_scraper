@@ -1,5 +1,9 @@
 #! python3
 
+# Description:
+# By default, reads 'inventory.txt' from the current working directory. This must be a lackey-formatted decklist/inventory.
+# A single card, or a python-list of cards can be passed as argv[1:] to search on the fly.
+
 # TODOs:
 
 # Partial startswith matches (Gerard vs Gerard Rafin etc)
