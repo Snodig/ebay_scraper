@@ -1,0 +1,409 @@
+8       .44 Magnum
+1       Aching Beauty
+4       Acrobatics
+5       Aid from Bats
+6       Aire of Elation
+1       Al's Army Apparatus
+1       Alacrity
+4       Amaranth
+1       Anathema
+1       Ancestor's Talisman, The
+5       Ancient Influence
+5       Ancilla Empowerment
+2       Animalism
+2       Apparition
+2       Archon
+1       Archon Investigation
+3       Army of Rats
+6       Arson
+2       Art Museum
+7       Ascendance
+1       Asylum Hunting Ground
+3       Auspex
+4       Autarkis Persecution
+1       Backways
+1       Bang Nakh - Tiger's Claws
+1       Banishment
+3       Barrens, The
+2       Bastard Sword
+7       Bewitching Oration
+1       Blessing of Durga Syn
+3       Blood Bond
+8       Blood Doll
+3       Blood Hunt
+4       Blood Rage
+4       Blur
+2       Body of Sun
+1       Bomb
+2       Bonding
+1       Brainwash
+3       Bribes
+1       Brujah Frenzy
+1       Brujah Justicar
+1       Bum's Rush
+2       Camarilla Exemplary
+6       Canine Horde
+6       Cats' Guidance
+3       Cauldron of Blood
+1       Celerity
+2       Chainsaw
+1       Charming Lobby
+10      Claws of the Dead
+3       Cloak the Gathering
+1       Closed Session
+1       Command of the Harpies
+3       Computer Hacking
+1       Concealed Weapon
+4       Conditioning
+1       Conquer the Beast
+7       Consanguineous Boon
+4       Consanguineous Condemnation
+3       Conservative Agitation
+1       Corpse Minion
+7       Cryptic Mission
+2       Cryptic Rider
+1       Curse of Nitocris
+1       Damned, The
+1       Dartmoor, England
+1       Dawn Operation
+2       Day Operation
+1       Dead-End Alley
+3       Deal with the Devil
+4       Deer Rifle
+2       Deflection
+1       Delaying Tactics
+1       Destructive Secrets
+1       Disarming Presence
+2       Disguised Weapon
+4       Disputed Territory
+1       Distraction
+3       Dodge
+6       Domain Challenge
+5       Dominate
+3       Dragon's Breath Rounds
+2       Dramatic Upheaval
+5       Drawing Out the Beast
+5       Dread Gaze
+3       Eagle's Sight
+7       Earth Control
+3       Earth Meld
+2       Elder Intervention
+2       Elder Kindred Network
+1       Elder Library
+1       Elysium: The Arboretum
+1       Elysium: The Palace of Versailles
+1       Embrace, The
+5       Enchant Kindred
+8       Enhanced Senses
+1       Eyes of the Dead
+3       Fake Out
+2       Fame
+1       Fear of Mekhet
+1       Fists of Death
+4       Flak Jacket
+3       Flash
+1       Flesh of Marble
+6       Force of Will
+2       Form of Mist
+7       Form of the Ghost
+2       Fortitude
+1       Fortune Teller
+1       Fortune Teller Shop
+1       Fourth Tradition: The Accounting
+4       Frenzy
+1       Gangrel Atavism
+1       Gangrel Justicar
+1       Giant's Blood
+2       Giovanni Discrimination
+5       Gird Minions
+2       Glaser Rounds
+5       Gleam of Red Eyes
+1       Golconda: Inner Peace
+5       Govern the Unaligned
+2       Grenade
+5       Growing Fury
+1       Guardian Angel
+2       Gypsies
+2       Haven Uncovered
+1       Hawg
+1       Hellhound
+7       Hidden Lurker
+1       Hidden Strength
+1       High Stakes
+2       Homunculus
+2       Horrific Countenance
+1       Ignis Fatuus
+8       Illegal Search and Seizure
+1       Inbase Discotek, Frankfurt
+1       Incriminating Videotape
+3       Indomitability
+2       Infernal Pursuit
+1       Information Highway
+1       IR Goggles
+1       J. S. Simmons, Esq.
+2       Jar the Soul
+1       Kindred Restructure
+4       Kine Resources Contested
+2       KRCG News Radio
+4       Laptop Computer
+5       Legal Manipulations
+1       Leonardo, Mortician
+1       Letter from Vienna
+3       Lextalionis
+2       Life Boon
+1       London Evening Star, Tabloid Newspaper
+2       Lost in Crowds
+2       Louvre, Paris, The
+1       Loyal Street Gang
+5       Lucky Blow
+4       Majesty
+1       Malkavian Derangement: Alternate Personality
+3       Malkavian Seven Miseries, The
+3       Manstopper Rounds
+1       Marijava Ghoul
+1       Mask of a Thousand Faces
+2       Masquerade Enforcement
+3       Metro Underground
+5       Mighty Grapple
+1       Mind Numb
+6       Minion Tap
+1       Minor Boon
+3       Misdirection
+1       Mob Connections
+1       Monocle of Clarity
+3       Movement of the Mind
+1       Mr. Winthrop
+1       Necromancy
+2       Nosferatu Putrescence
+1       Obedience
+1       Obfuscate
+1       Of Noble Blood
+2       Open Grate
+1       Owl Companion
+1       Palatial Estate
+1       Parity Shift
+1       Park Hunting Ground
+6       Peace Treaty
+1       Pentex(TM) Subversion
+5       Political Backlash
+5       Political Flux
+2       Potence
+1       Powerbase: Washington, D.C.
+1       Praxis Seizure: Athens
+1       Praxis Seizure: Atlanta
+1       Praxis Seizure: Glasgow
+2       Praxis Seizure: London
+1       Praxis Seizure: Paris
+1       Praxis Seizure: Rome
+1       Praxis Seizure: Venice
+1       Praxis Seizure: Washington, D.C.
+4       Praxis Solomon
+1       Precognizant Mobility
+4       Presence
+3       Protean
+6       Protracted Investment
+2       Psyche!
+2       Psychic Projection
+1       Pulled Fangs
+3       Pulling Strings
+2       Pulse of the Canaille
+3       Rack, The
+2       Rampage
+1       Rapid Healing
+4       Rat's Warning
+2       Raven Spy
+1       Ravnos Acceptance
+1       Read Intentions
+3       Regaining the Upper Hand
+1       Renegade Garou
+1       Resplendent Protector
+2       Restoration
+1       Reversal of Fortunes
+3       Riposte
+1       Rotschreck
+1       Sabbat Threat
+1       Sacre-Coeur Cathedral, France
+1       Sacrificial Lamb
+5       Saturday-Night Special
+4       Sawed-Off Shotgun
+1       Scorn of Adonis
+3       Scorpion Sting
+3       Second Tradition: Domain
+1       Secure Haven
+2       Seduction
+1       Shadow of the Beast
+1       Shadow of the Wolf
+4       Shattering Blow
+3       Short-Term Investment
+5       Sideslip
+2       Skin of Night
+5       Skin of Rock
+3       Skin of Steel
+2       Slum Hunting Ground
+6       Social Charm
+1       Society Hunting Ground
+1       Soul Stealing
+4       Spirit's Touch
+1       Spiritual Protector
+1       Sport Bike
+2       Spying Mission
+1       Storm Sewers
+1       Sudden Reversal
+5       Surprise Influence
+1       Taste of Death
+5       Telepathic Counter
+2       Telepathic Misdirection
+1       Telepathic Vote Counting
+3       Thaumaturgy
+6       Theft of Vitae
+2       Third Tradition: Progeny
+3       Threats
+4       Thrown Gate
+3       Thrown Sewer Lid
+1       Torn Signpost
+1       Tradition Upheld
+1       Tragic Love Affair
+6       Trap
+1       Treatment, The
+3       Undead Strength
+5       Unflinching Persistence
+4       Unnatural Disaster
+5       Vampiric Speed
+5       Vanish from the Mind's Eye
+1       Vast Wealth
+1       Veiled Sight
+3       Ventrue Directorate Assembly
+2       Ventrue Headquarters
+1       Ventrue Justicar
+1       Vial of Elder Vitae
+2       Vial of Garou Blood
+2       Voter Captivation
+4       Wake with Evening's Freshness
+2       Warzone Hunting Ground
+2       Weather Control
+2       Werewolf Pack
+1       Whispers of the Nictuku
+7       Wolf Claws
+3       Wolf Companion
+2       Zip Gun
+1       Zombie
+2       Zoo Hunting Ground
+Crypt:
+4       Adrianne
+2       Agrippina
+1       Aleph
+1       Alexandra
+1       Anastasia Grey
+1       Andreas, The Bard of Crete
+1       Angus the Unruled
+2       Anneke
+3       Anson
+1       Antoinette DuChamp
+2       Anvil
+2       Appolonius
+3       Badger
+1       Basilia
+3       Bear Paw
+1       Bindusara, Historian of the Kindred
+2       Black Cat
+1       Camille Devereux, The Raven
+1       Cassandra, Magus Prime
+2       Chester DuBois
+1       Colin Flynn
+1       Courtland Leighton
+4       Cristofero Giovanni
+2       Crusher
+1       Daliyah
+2       Dancin' Dana
+2       Democritus
+1       Didi Meyers
+1       Dieter Kleist
+2       Dimple
+1       Dollface
+2       Don Cruez, The Idealist
+1       Dorian Strack
+1       Dr. Jest
+3       Dr. John Casey
+2       Dre, Leader of the Cold Dawn
+3       Duck
+1       Ebanezer Roush
+1       Eliott Sinclair, Virtuoso Thespian
+1       Elisabetta Romano
+1       Emerson Bridges
+3       Enzo Giovanni, Pentex Board of Directors
+2       Felicia Mostrom
+1       Francois Villon
+1       Gideon Fontaine
+1       Gilbert Duane
+1       Gitane St. Claire
+1       Giuliano Vincenzi
+1       Gloria Giovanni
+3       Grendel the Worm-Eaten
+1       Gwendolyn
+1       Hadrian Garrick
+1       Harrod
+2       Heather Florent, The Opportunist
+1       Hector Sosa
+1       Helena Casimir
+2       Igo the Hungry
+1       Iliana
+2       Ingrid Rossler
+2       Javier Montoya
+1       Jazz Wentworth
+2       Jing Wei
+2       Kallista, Master Sculptor
+1       Katarina
+1       Klaus van der Veken
+3       KoKo
+1       Kostantin, Baro of the Caravan
+1       Lucian
+3       Lucretia, Cess Queen
+1       Lupo
+1       Marty Lechtansi
+1       Masika
+2       Melissa Barton
+1       Merrill Molitor
+2       Miranda Sanova
+1       Natasha Volfchek
+3       Navar McClaren
+1       Nik
+2       Ozmo
+1       Petru Sipos
+3       Queen Anne
+3       Quinton McDonnell
+2       Rake
+2       Ramiel DuPre
+1       Ricki Van Demsi
+1       Roland Bishop
+2       Roland Loussarian
+1       Roman Alexander
+4       Roreca Quaid
+2       Rufina Soledad
+4       Sabine Lafitte
+2       Sammy
+1       Sarah Cobbler
+1       Sasha Miklos
+2       Sebastian Marley
+1       Selma the Repugnant
+1       Sheldon, Lord of the Clog
+1       Sigrid Bekker
+1       Sir Walter Nash
+2       Smudge the Ignored
+1       Stanislava
+2       Tatiana Romanov
+2       Tereza Rostas
+1       Thomas Thorne
+1       Tiberius, The Scandalmonger
+2       Timothy Crowley
+1       Tura Vaughn
+2       Tusk, The Talebearer
+1       Uma Hatch
+1       Uriah Winter
+2       Violette Prentiss
+1       Vliam Andor
+1       Volker, The Puppet Prince
+3       Wynn
+1       Yuri, The Talon
+1       Zack North
+1       Zebulon
+1       Zoe
