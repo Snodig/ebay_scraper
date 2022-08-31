@@ -13,7 +13,6 @@
 
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 import sys, pdb
 import re
 import urllib
@@ -83,16 +82,13 @@ def parse(soup, card, is_crypt=False):
     card = format_search_term(card).replace("'", '')
     productslist = list()
     results = soup.find_all('div', {'class': 's-item__wrapper clearfix'})
+    #results = soup.find_all('div', {'class': 's-item__title'})
     for item in results:
-        ebay_heading = item.find('h3', {'class': 's-item__title'})
-        if ebay_heading == None:
-            print("NONE")
+        title = item.find('div', {'class': 's-item__title'}).text
+
+        if title == 'Shop on eBay':
             continue
 
-        if ebay_heading.text == 'Shop on eBay':
-            continue
-
-        title = item.find('h3', {'class': 's-item__title'}).text
         title_lower = format_search_term(title).replace("'", '');
 
         is_lot = ' lot ' in title_lower
