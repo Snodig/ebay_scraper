@@ -6,6 +6,7 @@
 
 # TODOs:
 
+# Add rickstock and vtesfrance? Title formats are similar
 # Partial startswith matches (Gerard vs Gerard Rafin etc)
 # Lots of weird special characters
 # Searching for crypt cards within lots
@@ -24,6 +25,8 @@ import time
 import traceback
 import os
 
+storenames = ["melvin-lightfoot", "vtesfrance", "rickstock"]
+
 def format_search_term(term):
     term = term.lower()
     if term.startswith('the '):
@@ -36,17 +39,22 @@ def format_search_term(term):
     term = term.replace("’",'')
     #term = term.replace("'",'') # Messes up the search
     term = term.replace("ö",'o')
+    term = term.replace("ø",'o')
     term = term.replace("ä",'a')
+    term = term.replace("å",'a')
     term = term.replace("ë",'e')
+    term = term.replace("æ",'e')
     term = term.replace("(tm)",'')
     term = term.replace('(adv)', 'advanced')
+    term = term.replace('(G6)', 'Fifth Edition')
+    term = term.replace('(G7)', 'Fifth Edition')
 
     if '"' in term:
         term = term[0:term.find('"')-1] + term[term.rfind('"')+1:len(term)]
 
     return term
 
-def get_data(card):
+def get_data(store, card):
     searchterm = format_search_term(card)
     if '-' in searchterm:
         split = searchterm.split('-')
@@ -68,21 +76,19 @@ def get_data(card):
     searchterm = urllib.parse.quote(searchterm)
 
     url = f'https://www.ebay.com/sch/i.html?_dkr=1\
-&_ssn=melvin-lightfoot\
+&_ssn={store}\
 &store_cat=0\
-&store_name=midnightsunvtesstore\
 &_oac=1\
 &_nkw={searchterm}'
 # &LH_Sold=1\
 # &LH_Complete=1\
 
-    print(url)
+    #print(url)
     r = requests.get(url)
     soup = BeautifulSoup(r.text, 'html.parser')
     return soup
 
-def parse(soup, card, is_crypt=False):
-    print("Searching for: " + card)
+def parse(soup, store, card, is_crypt=False):
     card = format_search_term(card).replace("'", '')
     productslist = list()
     results = soup.find_all('div', {'class': 's-item__wrapper clearfix'})
@@ -98,7 +104,7 @@ def parse(soup, card, is_crypt=False):
         is_lot = ' lot ' in title_lower
 
         if not title_lower.replace("'",'').startswith(card.lower().replace("'",'')) and not is_lot:
-            print('Result discarded: ' + title_lower)
+            #print('Result discarded: ' + title_lower)
             continue
 
         # TODO: The fuzzy matching in lots will yield "Lucinde, Alastor" for "Alastor"
@@ -131,16 +137,27 @@ def parse(soup, card, is_crypt=False):
             print('"' + card + '" - Found fuzzy (discarded): "' + title_isolated.lower() + '"')
             continue
 
-        soldprice = float(item.find('span', {'class': 's-item__price'}).text.replace('NOK','').replace('$','').replace(',','').strip()) / int(numitems) # Prices are always per single
+        soldprice = item.find('span', {'class': 's-item__price'}).text
+        #print(soldprice)
+        if 'EUR' in soldprice or '$' in soldprice: # Can we extract the estimated price in NOK when this happens? <- No! Will have to look up current exchange rates (at script start).
+             # Root of Vitality (rickstock, $1)
+             # Tropy: Retainers (melvin-lightfoot, $1)
+             # Ayelea, The Manipulator (melvin-lightfoot, 0,92 EUR)
+             # Victor Tolliver (rickstock, $3.00)
+            pdb.set_trace()
+        soldprice = soldprice.replace('NOK','').replace('$','').replace('EUR','').replace(',','').strip()
+        soldprice = soldprice.split(' ')[0] # In case price is a range (X NOK to Y NOK)
+        soldprice = round(float(soldprice) / int(numitems), 3) # Prices are always per single
         link = item.find('a', {'class': 's-item__link'})['href']
 
         product = {
             'title': title,
             'soldprice': soldprice,
-            'link': link
+            'link': link,
+            'store': store
         }
 
-        print(card + ': ' + str(product))
+        #print(card + ': ' + str(product))
         productslist.append(product)
 
     return productslist
@@ -177,23 +194,37 @@ def main():
         totalvalue = 0
         unknown_prices = list()
         for card in cardinfos:
-            cardinfo = cardinfos[card]
-            soup = get_data(card)
-            listings = parse(soup, card)
+            print("\nSearching for: " + card)
+            listings = list()
+            for store in storenames:
+                try:
+                    soup = get_data(store, card)
+                    listings += parse(soup, store, card)
+                except KeyboardInterrupt:
+                    raise
+                except:
+                    print("\n")
+                    traceback.print_exc()
+                    continue
+
             if len(listings) == 0:
                 print('No results')
                 unknown_prices.append(card)
                 continue
 
             for sale in listings:
-                if cardinfo['price'] == 0 or sale['soldprice'] < cardinfo['price']:
-                    cardinfo['link'] = sale['link']
-                    cardinfo['price'] = sale['soldprice']
+                #print(sale['store'] + " - " + str(sale['soldprice']) + " v " + str(cardinfos[card]['price']) + " (" + str(sale['soldprice'] < cardinfos[card]['price']) + ")")
+                if cardinfos[card]['price'] == 0 or sale['soldprice'] < cardinfos[card]['price']:
+                    cardinfos[card]['link'] = sale['link']
+                    cardinfos[card]['store'] = sale['store']
+                    cardinfos[card]['price'] = sale['soldprice']
 
-            value = cardinfo['price'] * cardinfo['count']
+            value = round(cardinfos[card]['price'] * cardinfos[card]['count'], 3)
             totalvalue += value
+            totalvalue = round(totalvalue, 3)
 
-            print(card + ' (' + str(cardinfo['count']) + 'x*' + str(cardinfo['price']) + '=' + str(value) + ')')
+            print(card + ' (' + str(cardinfos[card]['count']) + 'x*' + str(cardinfos[card]['price']) + '=' + str(value) + ')')
+            print(cardinfos[card]['link'] + " (" + cardinfos[card]['store'] + ")")
             print('Total Value NOK ' + str(totalvalue))
 
     except KeyboardInterrupt:
